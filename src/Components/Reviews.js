@@ -7,6 +7,14 @@ const API = process.env.REACT_APP_API_URL;
 function Reviews() {
   const [reviews, setReviews] = useState([]);
   const { id } = useParams();
-  return <div></div>;
+
+  useEffect(() => {
+    axios.get(`${API}/bookmarks`);
+  });
+  return (
+    <div>
+      <h1>Reviews</h1>
+    </div>
+  );
 }
 export default Reviews;
