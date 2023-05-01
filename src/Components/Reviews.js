@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Review from "./Review";
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -17,6 +18,6 @@ function Reviews() {
       })
       .catch((e) => console.log(e));
   }, [id, API]);
-  return <section className="Reviews"></section>;
+  return <section className="Reviews">{}</section>;
 }
 export default Reviews;
