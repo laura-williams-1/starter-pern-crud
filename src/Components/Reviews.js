@@ -9,7 +9,9 @@ function Reviews() {
   const { id } = useParams();
 
   useEffect(() => {
-    axios.get(`${API}/bookmarks`);
+    axios
+      .get(`${API}/bookmarks/${id}/reviews`)
+      .then((res) => setReviews(res.data));
   });
   return (
     <div>

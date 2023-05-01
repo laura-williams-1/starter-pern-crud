@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-import Reviews from "./Reviews";
+import Reviews from "./Review";
 
 function BookmarkDetails() {
   const [bookmark, setBookmark] = useState([]);
