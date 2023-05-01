@@ -17,10 +17,6 @@ function Reviews() {
       })
       .catch((e) => console.log(e));
   }, [id, API]);
-  return (
-    <div>
-      <h1>Reviews</h1>
-    </div>
-  );
+  return <section className="Reviews"></section>;
 }
 export default Reviews;
