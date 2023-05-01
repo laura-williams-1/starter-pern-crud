@@ -11,8 +11,12 @@ function Reviews() {
   useEffect(() => {
     axios
       .get(`${API}/bookmarks/${id}/reviews`)
-      .then((res) => setReviews(res.data));
-  });
+      .then((res) => {
+        console.log(res);
+        setReviews(res.data);
+      })
+      .catch((e) => console.log(e));
+  }, [id, API]);
   return (
     <div>
       <h1>Reviews</h1>
