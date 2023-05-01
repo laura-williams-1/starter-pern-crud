@@ -6,7 +6,7 @@ const API = process.env.REACT_APP_API_URL;
 
 function Reviews() {
   const [reviews, setReviews] = useState([]);
-
+  const { id } = useParams();
   return <div></div>;
 }
 export default Reviews;
